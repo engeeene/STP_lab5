@@ -33,5 +33,8 @@ public class DataTest {
         Assert.assertEquals(address, person.getAddress());
         Assert.assertEquals(street, address.getStreet());
         Assert.assertEquals(building, address.getBuilding());
+
+        Assert.assertNotEquals(street, person.getAddress());
+        Assert.assertEquals(address, address);
     }
 }
